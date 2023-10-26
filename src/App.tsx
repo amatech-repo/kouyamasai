@@ -26,7 +26,7 @@ const App = () => {
               <Info
                 name="名前を変更しよう！"
                 label="学科・学年・クラス"
-                mail="g2254630@cc.kyoto-su.ac.jp"
+                mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               <About
