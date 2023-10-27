@@ -23,17 +23,27 @@ const App = () => {
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
+
+              {/* 名前と学年を変更してみましょう！ */}
               <Info
-                name="名前を変更しよう！"
-                label="学科・学年・クラス"
+                name="あまてく太郎"
+                label="情報科学部・3年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
+
+              {/* 自分自身ついての自己紹介文を書いてみましょう！ */}
               <About
-                aboutText="自分自身について自己紹介文を書いてみよう！どんなことに興味があるか、普段どんなことをしているか書いてみよう！"
+                aboutText="はじめまして、あまてく太郎と申します。大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。"
               />
-              <Hobby hobbyText="君の好きなことは何ですか？毎日よくしていることを書いてみよう！" />
-              <Interest interestText="どんなことに興味がありますか？将来何になりたいですか？" />
+
+              {/* あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
+              <Hobby hobbyText="旅行と写真撮影と読書が趣味です！特に台湾の文化や風景が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
+
+              {/* あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
+              <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
+
+              {/* 自己紹介用のリンクがあれば変更してみましょう！ */}
               <Footer
                 twitterLink="https://twitter.com/amatech1006"
                 githubLink="https://github.com/amatech-repo"
@@ -43,6 +53,7 @@ const App = () => {
             </section>
           </div>
 
+          {/* ここから先は変更しないでください！ */}
           {/* あまてくの名刺 */}
           <div className="back" onClick={() => handleClick()}>
             <section className="main__section">

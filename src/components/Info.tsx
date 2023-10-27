@@ -16,7 +16,7 @@ export const Info = (props: Props) => {
     return (
         <>
             <LazyLoad height={300}>
-                <img src="./images/profile.png" alt="プロフィール画像" />
+                <img src="./images/ogp.PNG" alt="プロフィール画像" />
             </LazyLoad>
             <section className="section-info">
                 <h2 className="name">{name}</h2>
