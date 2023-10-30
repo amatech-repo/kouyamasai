@@ -1,6 +1,4 @@
-import EmailIcon from "@mui/icons-material/Email";
 import LazyLoad from "react-lazy-load";
-import { MailTo } from "./Amatech/MailTo";
 import YoutubeIcon from "@mui/icons-material/YouTube";
 
 type Props = {
@@ -12,7 +10,7 @@ type Props = {
 };
 
 export const Info = (props: Props) => {
-    const { name, label, knowMoreLink, mail, YoutubeLink } = props;
+    const { name, label, knowMoreLink, YoutubeLink } = props;
     return (
         <>
             <LazyLoad height={300}>
