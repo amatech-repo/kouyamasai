@@ -114,6 +114,8 @@ li {
   margin-inline: auto;
 }
 
+/* 応用編: 名前を好きなデザインに変更しよう */
+/* hint: カラーや文字の大きさ・線など */
 .name {
   font-size: var(--fs-700);
   font-weight: 700;

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { Footer } from "../../components/User/Footer";
-import { Interest } from "../../components/User/Interest";
-import { About } from "../../components/User/About";
-import { Info } from "../../components/User/Info";
+import { Footer } from "./User/Footer";
+import { Interest } from "./User/Interest";
+import { About } from "./User/About";
+import { Info } from "./User/Info";
 import "./SampleCard.css";
 import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
-import { Hobby } from "../../components/User/Hobby";
+import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // hint: SampleCardを好きな名前に変更してください！
@@ -21,6 +21,8 @@ const SampleCard = () => {
   return (
     <>
       <main className="main">
+        {/* 応用編: 回転の速度を変えてみよう */}
+        {/* 番外: 回転方法を縦にしよう */}
         <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
