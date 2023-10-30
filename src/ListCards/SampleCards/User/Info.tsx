@@ -27,10 +27,6 @@ export const Info = (props: Props) => {
           </small>
         )}
         <div className="contact">
-          {/* <MailTo email={mail} subject="お話しましょう！" body="こんにちは！あまてく！" className="mailto">
-                        <EmailIcon className="icon" fontSize="small" />
-                        <span>Email</span>
-                    </MailTo> */}
           {YoutubeLink && (
             <div className="Youtube">
               <a href={YoutubeLink} target="_" rel="noopener noreferrer">
@@ -39,6 +35,7 @@ export const Info = (props: Props) => {
               </a>
             </div>
           )}
+          {/* 応用編: 好きなサイトに飛べるボタンを作成しよう */}
         </div>
       </section>
     </>

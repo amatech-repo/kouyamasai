@@ -45,6 +45,7 @@ const SampleCard = () => {
               <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
+              {/* リンクがない方はURLを削除してください */}
               <Footer
                 twitterLink="https://twitter.com/amatech1006"
                 githubLink="https://github.com/amatech-repo"
