@@ -1,14 +1,16 @@
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { Footer } from "../../components/Footer";
-import { Interest } from "../../components/Interest";
-import { About } from "../../components/About";
-import { Info } from "../../components/Info";
+import { Footer } from "./User/Footer";
+import { Interest } from "./User/Interest";
+import { About } from "./User/About";
+import { Info } from "./User/Info";
 import "./SampleCard.css";
 import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
-import { Hobby } from "../../components/Hobby";
+import { Hobby } from "./User/Hobby";
 
+// 名刺の名前を変更してみましょう！
+// hint: SampleCardを好きな名前に変更してください！
 const SampleCard = () => {
   const [isFlip, setIsFlip] = useState(false);
 
@@ -19,31 +21,30 @@ const SampleCard = () => {
   return (
     <>
       <main className="main">
+        {/* 応用編: 回転の速度を変えてみよう */}
+        {/* 番外: 回転方法を縦にしよう */}
         <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
-
-              {/* 名前と学年を変更してみましょう！ */}
+              {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
                 name="あまてく太郎"
                 label="情報科学部・3年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
+              {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
+              <About aboutText="大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。" />
 
-              {/* 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About
-                aboutText="大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。"
-              />
-
-              {/* あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
+              {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
               <Hobby hobbyText="旅行と写真撮影と読書が趣味です！特に台湾の文化や風景が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
 
-              {/* あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
+              {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
               <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
 
-              {/* 自己紹介用のリンクがあれば変更してみましょう！ */}
+              {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
+              {/* リンクがない方はURLを削除してください */}
               <Footer
                 twitterLink="https://twitter.com/amatech1006"
                 githubLink="https://github.com/amatech-repo"
