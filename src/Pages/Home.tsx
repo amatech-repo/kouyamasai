@@ -11,7 +11,7 @@ const Home = () => {
                     <div className='ChildCard'>あまてく太郎</div>
                 </Link>
                 {/* まず、App.tsxで遷移先のrouteの設定とコンポーネントの設定を行なってください。その次にLinkのtoには、遷移先のパスを指定してください 。タイトルは名刺作成者の名前にしてください。*/}
-                <Link to="/fuma" className='ParentCard'>
+                <Link to="/samplecards" className='ParentCard'>
                     <div className='ChildCard'>fuma</div>
                 </Link>
                 <Link to="/samplecards" className='ParentCard'>
