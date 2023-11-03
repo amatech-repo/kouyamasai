@@ -4,14 +4,14 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./aaa.css";
+import "./yudai.css";
 import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // hint: SampleCardを好きな名前に変更してください！
-const aaa = () => {
+const yudai = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -82,4 +82,4 @@ const aaa = () => {
   );
 };
 
-export default aaa;
+export default yudai;
