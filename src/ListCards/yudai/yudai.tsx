@@ -11,7 +11,7 @@ import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // hint: SampleCardを好きな名前に変更してください！
-const yudai = () => {
+const Yudai = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -82,4 +82,4 @@ const yudai = () => {
   );
 };
 
-export default yudai;
+export default Yudai;
