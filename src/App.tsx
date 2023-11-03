@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
-import Fuma from "./ListCards/fuma/Fuma.tsx";
+import Fuma from "./ListCards/fuma/fuma.tsx";
 import Home from "./Pages/Home.tsx";
 
 const App = () => {
