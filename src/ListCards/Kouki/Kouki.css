@@ -117,7 +117,7 @@ li {
 /* 応用編: 名前を好きなデザインに変更しよう */
 /* hint: カラーや文字の大きさ・線など */
 .name {
-  font-size: 750px;
+  font-size: 16px;
   font-weight: 700;
   margin-top: 1.3125em;
   color:#00ffff;
