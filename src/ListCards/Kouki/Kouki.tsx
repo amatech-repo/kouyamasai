@@ -24,7 +24,7 @@ const Kouki = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal" SpeedBackToFront = {0.8} SpeedBackToBack = {0.9}>
+        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal" flipSpeedBackToFront = {0.8} flipSpeedBackToBack = {0.9}>
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
