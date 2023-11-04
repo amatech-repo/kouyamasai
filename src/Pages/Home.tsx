@@ -14,27 +14,35 @@ const Home = () => {
         {/* **はディレクトリ名と同じ */}
         {/* 〇〇には来場者さんの好きな名前を設定してください */}
         {/* 参考例:
-                <Link to="/**" className='ParentCard'>
-                    <div className='ChildCard'>〇〇</div>
-                </Link>
-                */}
+          <Link to="/**" className='ParentCard'>
+              <div className='ChildCard'>〇〇</div>
+          </Link>
+        */}
         <Link to="/fuma" className="ParentCard">
           <div className="ChildCard">ふうま</div>
         </Link>
-        <Link to="/kouki" className='ParentCard'>
-            <div className='ChildCard'>こうき</div>
+        <Link to="/takutaku" className='ParentCard'>
+                    <div className='ChildCard'>Takutaku</div>
         </Link>
-        <Link to="/Jojo" className='ParentCard'>
-            <div className='ChildCard'>Jojo</div>
+        <Link to="/YoshikawaMasaya" className='ParentCard'>
+                    <div className='ChildCard'>YoshikawaMasaya</div>
         </Link>
-        <Link to="/Saori" className='ParentCard'>
-                    <div className='ChildCard'>さおり</div>
-                </Link>
-                <Link to="/Kouchan" className='ParentCard'>
-                    <div className='ChildCard'>こうちゃん</div>
-                </Link>
-                <Link to="/MizoguchiNatsuki" className='ParentCard'>
+        <Link to="/MizoguchiNatsuki" className='ParentCard'>
             <div className='ChildCard'>みぞぐちなつき</div>
+        <Link to="/kouki" className="ParentCard">
+          <div className="ChildCard">こうき</div>
+        </Link>
+        <Link to="/Jojo" className="ParentCard">
+          <div className="ChildCard">Jojo</div>
+        </Link>
+        <Link to="/Saori" className="ParentCard">
+          <div className="ChildCard">さおり</div>
+        </Link>
+        <Link to="/Kouchan" className="ParentCard">
+          <div className="ChildCard">こうちゃん</div>
+        </Link>
+        <Link to="/Yukkun" className="ParentCard">
+          <div className="ChildCard">ゆっくん</div>
         </Link>
       </div>
     </div>
