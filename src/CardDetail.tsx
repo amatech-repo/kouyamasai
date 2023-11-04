@@ -22,13 +22,13 @@ const CardDetail = () => {
     // キー: URLのパス名
     // 値: コンポーネント
     // 参考例: SampleCard: <SampleCard />,
-    fuma: <Fuma />,
+    Fuma: <Fuma />,
     Takutaku: <Takutaku />,
-    YoshikawaMasaya: <YoshikawaMasaya />,
-    MizoguchiNatsuki: <MizoguchiNatsuki />,
+    Yoshikawamasaya: <YoshikawaMasaya />,
+    Mizoguchinatsuki: <MizoguchiNatsuki />,
     Haruki: <Haruki />,
     Haruka: <Haruka />,
-    kouki: <Kouki />,
+    Kouki: <Kouki />,
     Jojo: <Jojo />,
     Saori: <Saori />,
     Kouchan: <Kouchan />,

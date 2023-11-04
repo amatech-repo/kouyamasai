@@ -7,18 +7,18 @@ const Home = () => {
     // path: URLのパス名
     // name: 名前
     // 参考例: { path: 'samplecard', name: 'サンプル' },
-    { path: "fuma", name: "ふうま" },
-    { path: "takutaku", name: "たくたく" },
-    { path: "yoshikawamasaya", name: "よしかわまさや" },
-    { path: "mizoguchinatsuki", name: "みぞぐちなつき" },
-    { path: "haruki", name: "はるき" },
-    { path: "haruka", name: "はるか" },
-    { path: "kouki", name: "こうき" },
-    { path: "jojo", name: "Jojo" },
-    { path: "saori", name: "さおり" },
-    { path: "kouchan", name: "こうちゃん" },
-    { path: "yukkun", name: "ゆっくん" },
-    { path: "kaho", name: "かほ" },
+    { path: "Fuma", name: "ふうま" },
+    { path: "Takutaku", name: "たくたく" },
+    { path: "Yoshikawamasaya", name: "よしかわまさや" },
+    { path: "Mizoguchinatsuki", name: "みぞぐちなつき" },
+    { path: "Haruki", name: "はるき" },
+    { path: "Haruka", name: "はるか" },
+    { path: "Kouki", name: "こうき" },
+    { path: "Jojo", name: "Jojo" },
+    { path: "Saori", name: "さおり" },
+    { path: "Kouchan", name: "こうちゃん" },
+    { path: "Yukkun", name: "ゆっくん" },
+    { path: "Kaho", name: "かほ" },
   ];
 
   return (
