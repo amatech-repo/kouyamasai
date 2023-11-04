@@ -5,6 +5,7 @@ import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Jojo from "./ListCards/Jojo/Jojo.tsx";
 import Takutaku from "./ListCards/Takutaku/Takutaku.tsx";
+import YoshikawaMasaya from "./ListCards/Fuma/YoshikawaMasaya.tsx";
 import Home from "./Pages/Home.tsx";
 import Kouki from "./ListCards/Kouki/Kouki.tsx";
 import Saori from "./ListCards/Saori/Saori.tsx";
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/Yumino" element={<Yumino />} />
         <Route path="/MizoguchiNatsuki" element={<MizoguchiNatsuki />} />
         <Route path="/takutaku" element={<Takutaku />} />
+        <Route path="/YoshikawaMasaya" element={<YoshikawaMasaya />} />
       </Routes>
     </BrowserRouter>
   );
