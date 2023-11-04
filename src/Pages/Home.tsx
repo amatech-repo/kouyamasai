@@ -24,8 +24,8 @@ const Home = () => {
         <Link to="/kouki" className='ParentCard'>
             <div className='ChildCard'>こうき</div>
         </Link>
-        <Link to="/**" className='ParentCard'>
-            <div className='ChildCard'>〇〇</div>
+        <Link to="/Jojo" className='ParentCard'>
+            <div className='ChildCard'>Jojo</div>
         </Link>
       </div>
     </div>
