@@ -21,21 +21,33 @@ const Home = () => {
         <Link to="/fuma" className="ParentCard">
           <div className="ChildCard">ふうま</div>
         </Link>
-        <Link to="/kouki" className='ParentCard'>
-            <div className='ChildCard'>こうき</div>
-        </Link>
-        <Link to="/Jojo" className='ParentCard'>
-            <div className='ChildCard'>Jojo</div>
-        </Link>
-        <Link to="/Saori" className='ParentCard'>
-                    <div className='ChildCard'>さおり</div>
+        <Link to="/takutaku" className='ParentCard'>
+                    <div className='ChildCard'>Takutaku</div>
                 </Link>
-                <Link to="/Kouchan" className='ParentCard'>
-                    <div className='ChildCard'>こうちゃん</div>
+        <Link to="/YoshikawaMasaya" className='ParentCard'>
+                    <div className='ChildCard'>YoshikawaMasaya</div>
                 </Link>
                 <Link to="/Haruki" className='ParentCard'>
                     <div className='ChildCard'>はるき</div>
                 </Link>
+                <Link to="/Haruka" className="ParentCard">
+          <div className="ChildCard">はるか</div>
+        </Link>          
+        <Link to="/kouki" className="ParentCard">
+          <div className="ChildCard">こうき</div>
+        </Link>
+        <Link to="/Jojo" className="ParentCard">
+          <div className="ChildCard">Jojo</div>
+        </Link>
+        <Link to="/Saori" className="ParentCard">
+          <div className="ChildCard">さおり</div>
+        </Link>
+        <Link to="/Kouchan" className="ParentCard">
+          <div className="ChildCard">こうちゃん</div>
+        </Link>
+        <Link to="/Yukkun" className="ParentCard">
+          <div className="ChildCard">ゆっくん</div>
+        </Link>
       </div>
     </div>
   );
