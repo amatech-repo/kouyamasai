@@ -4,6 +4,7 @@ import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 // 参考例: import ** from "./ListCards/**/**/.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Home from "./Pages/Home.tsx";
+import Kouki from "./Pages/Kouki.tsx";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/samplecards" element={<SampleCard />} />
         <Route path="/fuma" element={<Fuma />} />
+        <Route path="/kouki" element={<Kouki />} />
       </Routes>
     </BrowserRouter>
   );
