@@ -45,6 +45,9 @@ const Home = () => {
         <Link to="/YoshikawaMasaya" className="ParentCard">
           <div className="ChildCard">YoshikawaMasaya</div>
         </Link>
+        <Link to="/Yukkun" className="ParentCard">
+          <div className="ChildCard">ゆっくん</div>
+        </Link>
       </div>
     </div>
   );
