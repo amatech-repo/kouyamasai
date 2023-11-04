@@ -21,20 +21,23 @@ const Home = () => {
         <Link to="/fuma" className="ParentCard">
           <div className="ChildCard">ふうま</div>
         </Link>
-        <Link to="/kouki" className='ParentCard'>
-            <div className='ChildCard'>こうき</div>
+        <Link to="/kouki" className="ParentCard">
+          <div className="ChildCard">こうき</div>
         </Link>
-        <Link to="/Jojo" className='ParentCard'>
-            <div className='ChildCard'>Jojo</div>
+        <Link to="/Jojo" className="ParentCard">
+          <div className="ChildCard">Jojo</div>
         </Link>
-        <Link to="/Saori" className='ParentCard'>
-                    <div className='ChildCard'>さおり</div>
-                </Link>
-                <Link to="/Kouchan" className='ParentCard'>
-                    <div className='ChildCard'>こうちゃん</div>
-                </Link>
+        <Link to="/Saori" className="ParentCard">
+          <div className="ChildCard">さおり</div>
+        </Link>
+        <Link to="/Kouchan" className="ParentCard">
+          <div className="ChildCard">こうちゃん</div>
+        </Link>
         <Link to="/Yumino" className="ParentCard">
           <div className="ChildCard">ゆみのさん</div>
+        </Link>
+        <Link to="/MizoguchiNatsuki" className="ParentCard">
+          <div className="ChildCard">みぞぐちなつき</div>
         </Link>
       </div>
     </div>
