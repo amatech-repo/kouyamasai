@@ -3,7 +3,7 @@ import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 // 以下の参考例をコピーし、**を修正してください
 // 参考例: import ** from "./ListCards/**/**/.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
-import Fuma from "./ListCards/Takutaku/Takutaku.tsx";
+import Takutaku from "./ListCards/Takutaku/Takutaku.tsx";
 import Home from "./Pages/Home.tsx";
 
 const App = () => {
