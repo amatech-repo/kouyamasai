@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./SampleCard.css";
+import "./Deguchi.css";
 import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 SampleCard
+// 例 Deguchi
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const SampleCard = () => {
+const Deguchi = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,8 +30,8 @@ const SampleCard = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="あまてく太郎"
-                label="情報科学部・3年"
+                name="出口"
+                label="情報理工学部・4年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
@@ -83,4 +83,4 @@ const SampleCard = () => {
   );
 };
 
-export default SampleCard;
+export default Deguchi;

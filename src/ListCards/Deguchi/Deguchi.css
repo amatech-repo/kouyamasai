@@ -117,11 +117,10 @@ li {
 /* 応用編: 名前を好きなデザインに変更しよう */
 /* hint: カラーや文字の大きさ・線など */
 .name {
-  font-size: 50px;
+  font-size: var(--fs-700);
   font-weight: 700;
   margin-top: 1.3125em;
-  color: #003e70;
-  /* border:3px solid #003e70; */
+  color: #000;
 }
 
 .stack {
