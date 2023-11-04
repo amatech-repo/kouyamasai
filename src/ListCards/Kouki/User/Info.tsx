@@ -35,7 +35,7 @@ export const Info = (props: Props) => {
               </a>
             </div>
           )}
-          {a href= {YouTubeLink} <span>YouTube</span> </a>}
+          {<a> href= {YoutubeLink} <span>YouTube</span> </a>}
         </div>
       </section>
     </>
