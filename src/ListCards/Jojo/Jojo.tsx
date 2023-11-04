@@ -30,26 +30,26 @@ const Jojo = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="あまてく太郎"
-                label="情報科学部・3年"
+                name="JoJo"
+                label="外国語学部　ヨーロッパ言語ドイツ語先行４年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。" />
+              <About aboutText="大学でドイツ語を勉強しておりドイツに一年間留学しました。" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="旅行と写真撮影と読書が趣味です！特に台湾の文化や風景が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
+              <Hobby hobbyText="お菓子を作ることが好きです。特にクッキーを作るのが好きです。" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
+              <Interest interestText="散歩するのが好きでコロナ禍では健康を気にしてよく嵐山にウォーキングしていました。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/amatech1006"
-                githubLink="https://github.com/amatech-repo"
-                instagramLink=""
+                twitterLink="https://twitter.com/"
+                githubLink=""
+                instagramLink="https://instagram.com/noriko_in_japan"
                 linkedinLink=""
               />
             </section>
