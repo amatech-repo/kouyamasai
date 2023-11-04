@@ -5,8 +5,8 @@ import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
 import "./Haruka.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！

@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Saori.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Fuma.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Saori
-const Saori = () => {
+// 例 SampleCard
+const Fuma = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -24,31 +24,31 @@ const Saori = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={isFlip} flipDirection="vertical">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="さおり"
-                label="高校二年"
+                name="ふうま"
+                label="京都産業大学 情報理工学部　4年"
                 mail=""
-                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
+                YoutubeLink=""
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="志望校探しています" />
+              <About aboutText="iOSエンジニアです" />
 
-              {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="tiktokを見ている" />
+              {/* 入門編: あなたの趣味は何ですか？*/}
+              <Hobby hobbyText="最近よくNetflixでアニメを見ています。この前はBLEACHを見ていました。今はエヴァンゲリオンを見始めました" />
 
-              {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="漢検の勉強している" />
+              {/* 入門編: あなたが今興味を持っていることは何ですか？*/}
+              <Interest interestText="デザインについて興味があります。UI/UXだけではなく、チラシやポスターのデザインにも興味が湧きました" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/amatech1006"
-                githubLink="https://github.com/amatech-repo"
+                twitterLink="https://twitter.com/25maplen"
+                githubLink="https://github.com/maple-fm"
                 instagramLink=""
                 linkedinLink=""
               />
@@ -83,4 +83,4 @@ const Saori = () => {
   );
 };
 
-export default Saori;
+export default Fuma;

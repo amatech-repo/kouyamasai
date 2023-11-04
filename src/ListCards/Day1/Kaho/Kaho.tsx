@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./MizoguchiNatsuki.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Kaho.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 MizoguchiNatsuki
-const MizoguchiNatsuki = () => {
+// 例 Kaho
+const Kaho = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,25 +30,24 @@ const MizoguchiNatsuki = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="溝口夏樹"
-                label="コンピュータ理工学部2期生　2013年卒"
+                name="かほ"
+                label="文化学部・3年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="名古屋の独立系IT企業に勤務。某自動車会社のシステム改修やってる。最近忙しい。" />
+              <About aboutText="最近ホテルのアルバイト頑張ってます！" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="ゲーム、動画視聴、読書等。大学の後輩から中国SFの三体を読めと言われ続け夏から一気読みした。" />
-
+              <Hobby hobbyText="よく寝ること" />
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="twitterの情報を収集してブラウザから見るシステムを作ろうとダラダラしている内にAPIが変わりXに変わり。AI関連の勉強をしてみようとG検定を取得。E検定勉強中。" />
+              <Interest interestText="最近ディズニーのリール見てる" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/amatech1006"
-                githubLink="https://github.com/amatech-repo"
+                twitterLink=""
+                githubLink=""
                 instagramLink=""
                 linkedinLink=""
               />
@@ -83,4 +82,4 @@ const MizoguchiNatsuki = () => {
   );
 };
 
-export default MizoguchiNatsuki;
+export default Kaho;

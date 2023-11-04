@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Yumino.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Takutaku.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
-
+// テストコメント
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 SampleCard
-const Yumino = () => {
+// 例 Takutaku
+const Takutaku = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,25 +30,25 @@ const Yumino = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="弓乃　廣心"
-                label="経済学部・３回生"
+                name="あまてく太郎"
+                label="情報科学部・3年"
                 mail=""
-                YoutubeLink=""
+                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="２３歳です　就職活動をスタートさせたい" />
+              <About aboutText="大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="サウナに毎日入っています。あと、映画が好きです、ジョンウィック最高！" />
+              <Hobby hobbyText="旅行と写真撮影と読書が趣味です！特に台湾の文化や風景が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="古生物に最近興味がでてきました。" />
+              <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink=""
-                githubLink=""
+                twitterLink="https://twitter.com/amatech1006"
+                githubLink="https://github.com/amatech-repo"
                 instagramLink=""
                 linkedinLink=""
               />
@@ -83,4 +83,4 @@ const Yumino = () => {
   );
 };
 
-export default Yumino;
+export default Takutaku;
