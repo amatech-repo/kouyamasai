@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 // 最後尾に新しいimport文を追加してください
-// 参考例: import SampleCard from "./ListCards/SampleCards/SampleCard";
+// 参考例: import SampleCard from "./ListCards/SampleCard/SampleCard";
 import Fuma from "./ListCards/Fuma/Fuma";
 import Takutaku from "./ListCards/Takutaku/Takutaku";
 import YoshikawaMasaya from "./ListCards/YoshikawaMasaya/YoshikawaMasaya";
@@ -13,6 +13,7 @@ import Saori from "./ListCards/Saori/Saori";
 import Kouchan from "./ListCards/Kouchan/Kouchan";
 import Yukkun from "./ListCards/Yukkun/Yukkun";
 import Kaho from "./ListCards/Kaho/Kaho";
+import Deguchi from "./ListCards/Deguchi/Deguchi";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -34,6 +35,7 @@ const CardDetail = () => {
     Kouchan: <Kouchan />,
     Yukkun: <Yukkun />,
     Kaho: <Kaho />,
+    Deguchi: <Deguchi />,
   };
 
   const CardComponent = cardComponents[cardName!];
