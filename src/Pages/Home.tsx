@@ -14,18 +14,21 @@ const Home = () => {
         {/* **はディレクトリ名と同じ */}
         {/* 〇〇には来場者さんの好きな名前を設定してください */}
         {/* 参考例:
-                <Link to="/**" className='ParentCard'>
-                    <div className='ChildCard'>〇〇</div>
-                </Link>
-                */}
+          <Link to="/**" className='ParentCard'>
+              <div className='ChildCard'>〇〇</div>
+          </Link>
+        */}
         <Link to="/fuma" className="ParentCard">
           <div className="ChildCard">ふうま</div>
         </Link>
         <Link to="/takutaku" className='ParentCard'>
                     <div className='ChildCard'>Takutaku</div>
-                </Link>
+        </Link>
         <Link to="/YoshikawaMasaya" className='ParentCard'>
                     <div className='ChildCard'>YoshikawaMasaya</div>
+        </Link>
+        <Link to="/MizoguchiNatsuki" className='ParentCard'>
+            <div className='ChildCard'>みぞぐちなつき</div>
                 </Link>
                 <Link to="/Haruki" className='ParentCard'>
                     <div className='ChildCard'>はるき</div>

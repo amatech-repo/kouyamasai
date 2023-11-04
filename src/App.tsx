@@ -9,6 +9,7 @@ import Jojo from "./ListCards/Jojo/Jojo.tsx";
 import Home from "./Pages/Home.tsx";
 import Kouki from "./ListCards/Kouki/Kouki.tsx";
 import Saori from "./ListCards/Saori/Saori.tsx";
+import MizoguchiNatsuki from "./ListCards/MizoguchiNatsuki/MizoguchiNatsuki.tsx";
 import Kouchan from "./ListCards/Kouchan/Kouchan.tsx";
 import Haruki from "./ListCards/Haruki/Haruki.tsx";
 import Haruka from "./ListCards/Haruka/Haruka.tsx";
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/Jojo" element={<Jojo />} />
         <Route path="/Saori" element={<Saori />} />
         <Route path="/Kouchan" element={<Kouchan />} />
+        <Route path="/MizoguchiNatsuki" element={<MizoguchiNatsuki />} />
         <Route path="/Haruki" element={<Haruki/>}></Route>
         <Route path="/Haruka" element={<Haruka />} />
         <Route path="/Yukkun" element={<Yukkun />} />
