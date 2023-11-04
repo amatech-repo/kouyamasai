@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 // 最後尾に新しいimport文を追加してください
-// 参考例: import Yumino from "./ListCards/Yumino/Yumino";
+// 参考例: import SampleCard from "./ListCards/SampleCard/SampleCard";
 import Fuma from "./ListCards/Fuma/Fuma";
 import Takutaku from "./ListCards/Takutaku/Takutaku";
 import YoshikawaMasaya from "./ListCards/YoshikawaMasaya/YoshikawaMasaya";
@@ -23,7 +23,7 @@ const CardDetail = () => {
     // 最後尾に参考例を元に追加してください
     // キー: URLのパス名
     // 値: コンポーネント
-    // 参考例: Yumino: <Yumino />,
+    // 参考例: SampleCard: <SampleCard />,
     Fuma: <Fuma />,
     Takutaku: <Takutaku />,
     Yoshikawamasaya: <YoshikawaMasaya />,
