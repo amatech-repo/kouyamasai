@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 // 以下の参考例をコピーし、**を修正してください
 // 参考例: import ** from "./ListCards/**/**.tsx";
+import Kaho from "./ListCards/Kaho/Kaho.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Jojo from "./ListCards/Jojo/Jojo.tsx";
 import Takutaku from "./ListCards/Takutaku/Takutaku.tsx";
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/Yukkun" element={<Yukkun />} />
         <Route path="/Haruka" element={<Haruka />} />
         <Route path="/Haruki" element={<Haruki />}></Route>
+        <Route path="/Kaho" element={<Kaho />} />
       </Routes>
     </BrowserRouter>
   );
