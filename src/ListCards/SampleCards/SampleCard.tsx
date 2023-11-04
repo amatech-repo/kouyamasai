@@ -5,6 +5,7 @@ import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
 import "./SampleCard.css";
+import "../index.css";
 import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
