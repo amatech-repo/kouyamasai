@@ -4,7 +4,7 @@ import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 // 参考例: import ** from "./ListCards/**/**/.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Home from "./Pages/Home.tsx";
-import Kouki from "./ListCards/Kouki.tsx";
+import Kouki from "./ListCards/Kouki/Kouki.tsx";
 
 const App = () => {
   return (
