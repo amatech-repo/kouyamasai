@@ -5,6 +5,7 @@ import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 import Riku from "./ListCards/Riku/Riku.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Home from "./Pages/Home.tsx";
+import Kouki from "./ListCards/Kouki/Kouki.tsx";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         <Route path="/samplecards" element={<SampleCard />} />
         <Route path="/fuma" element={<Fuma />} />
         <Route path="/riku" element={<Riku />} />
+        <Route path="/kouki" element={<Kouki />} />
+
       </Routes>
     </BrowserRouter>
   );
