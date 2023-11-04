@@ -4,13 +4,13 @@ import SampleCard from "./ListCards/SampleCards/SampleCard.tsx";
 // 参考例: import ** from "./ListCards/**/**.tsx";
 import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Jojo from "./ListCards/Jojo/Jojo.tsx";
+import Takutaku from "./ListCards/Takutaku/Takutaku.tsx";
 import Home from "./Pages/Home.tsx";
 import Kouki from "./ListCards/Kouki/Kouki.tsx";
 import Saori from "./ListCards/Saori/Saori.tsx";
 import Kouchan from "./ListCards/Kouchan/Kouchan.tsx";
 import Yumino from "./ListCards/Yumino/Yumino.tsx";
 import MizoguchiNatsuki from "./ListCards/MizoguchiNatsuki/MizoguchiNatsuki.tsx";
-import Takutaku from "./ListCards/Takutaku/Takutaku.tsx";
 
 const App = () => {
   return (
