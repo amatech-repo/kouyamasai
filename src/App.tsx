@@ -6,6 +6,7 @@ import Fuma from "./ListCards/Fuma/Fuma.tsx";
 import Jojo from "./ListCards/Jojo/Jojo.tsx";
 import Home from "./Pages/Home.tsx";
 import Kouki from "./ListCards/Kouki/Kouki.tsx";
+import Saori from "./ListCards/Saori/Saori.tsx";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/fuma" element={<Fuma />} />
         <Route path="/kouki" element={<Kouki />} />
         <Route path="/Jojo" element={<Jojo />} />
+        <Route path="/Saori" element={<Saori />} />
       </Routes>
     </BrowserRouter>
   );
