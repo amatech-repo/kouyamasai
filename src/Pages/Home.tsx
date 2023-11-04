@@ -22,8 +22,11 @@ const Home = () => {
           <div className="ChildCard">ふうま</div>
         </Link>
         <Link to="/kouki" className='ParentCard'>
-                    <div className='ChildCard'>こうき</div>
-                </Link>
+            <div className='ChildCard'>こうき</div>
+        </Link>
+        <Link to="/**" className='ParentCard'>
+            <div className='ChildCard'>〇〇</div>
+        </Link>
       </div>
     </div>
   );
