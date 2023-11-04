@@ -1,40 +1,29 @@
-import { Link } from 'react-router-dom'
-import './Home.css'
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
-    return (
-        <div className='Page'>
-            <h1>名刺一覧！！</h1>
-            <p>プログラミング体験会へのご参加ありがとうございました！</p>
-            <div className='List'>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
+  return (
+    <div className="Page">
+      <h1>名刺一覧！！</h1>
+      <p>プログラミング体験会へのご参加ありがとうございました！</p>
+      <div className="List">
+        <Link to="/samplecards" className="ParentCard">
+          <div className="ChildCard">あまてく太郎</div>
+        </Link>
+        {/* // 以下の参考例をコピーし、**を修正してください */}
+        {/* **はディレクトリ名と同じ */}
+        {/* 〇〇には来場者さんの好きな名前を設定してください */}
+        {/* 参考例:
+                <Link to="/**" className='ParentCard'>
+                    <div className='ChildCard'>〇〇</div>
                 </Link>
-                {/* まず、App.tsxで遷移先のrouteの設定とコンポーネントの設定を行なってください。その次にLinkのtoには、遷移先のパスを指定してください 。タイトルは名刺作成者の名前にしてください。*/}
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-                <Link to="/samplecards" className='ParentCard'>
-                    <div className='ChildCard'>あまてく太郎</div>
-                </Link>
-            </div>
-        </div>
-    )
-}
+                */}
+        <Link to="/fuma" className="ParentCard">
+          <div className="ChildCard">ふうま</div>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
