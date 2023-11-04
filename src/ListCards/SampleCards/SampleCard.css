@@ -1,3 +1,90 @@
+:root {
+  /* colors */
+  --clr-body: 0 0% 11%;
+  --clr-outer-dark: 227 11% 15%;
+  --clr-info-dark: 231 12% 12%;
+  --clr-footer-dark: 231 7% 9%;
+  --clr-off-white: 0 0% 86%;
+  --clr-stack: 25 79% 78%;
+  --back-body: #fff;
+
+  /* font-sizes */
+  --fs-700: 1.5625rem;
+  --fs-400: 0.64rem;
+  --fs-700-heading: 1rem;
+
+  /* font-families */
+  --ff-sans-serif: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-sans-serif);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-off-white));
+  /* background-color: hsl(var(--clr-body) / 1); */
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .loading {
   display: flex;
   justify-content: center;
