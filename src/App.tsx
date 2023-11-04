@@ -14,6 +14,7 @@ import Yumino from "./ListCards/Yumino/Yumino.tsx";
 import MizoguchiNatsuki from "./ListCards/MizoguchiNatsuki/MizoguchiNatsuki.tsx";
 import Yukkun from "./ListCards/Yukkun/Yukkun.tsx";
 import Haruka from "./ListCards/Haruka/Haruka.tsx";
+import Haruki from "./ListCards/Haruki/Haruki.tsx";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/YoshikawaMasaya" element={<YoshikawaMasaya />} />
         <Route path="/Yukkun" element={<Yukkun />} />
         <Route path="/Haruka" element={<Haruka />} />
+        <Route path="/Haruki" element={<Haruki />}></Route>
       </Routes>
     </BrowserRouter>
   );
