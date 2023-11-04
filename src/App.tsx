@@ -29,6 +29,7 @@ const App = () => {
         <Route path="/Yumino" element={<Yumino />} />
         <Route path="/MizoguchiNatsuki" element={<MizoguchiNatsuki />} />
         <Route path="/takutaku" element={<Takutaku />} />
+        <Route path="/fuma" element={<YoshikawaMasaya />} />
         <Route path="/YoshikawaMasaya" element={<YoshikawaMasaya />} />
       </Routes>
     </BrowserRouter>
