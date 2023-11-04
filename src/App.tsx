@@ -13,6 +13,7 @@ import Kouchan from "./ListCards/Kouchan/Kouchan.tsx";
 import Yumino from "./ListCards/Yumino/Yumino.tsx";
 import MizoguchiNatsuki from "./ListCards/MizoguchiNatsuki/MizoguchiNatsuki.tsx";
 import Yukkun from "./ListCards/Yukkun/Yukkun.tsx";
+import Haruka from "./ListCards/Haruka/Haruka.tsx";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/fuma" element={<YoshikawaMasaya />} />
         <Route path="/YoshikawaMasaya" element={<YoshikawaMasaya />} />
         <Route path="/Yukkun" element={<Yukkun />} />
+        <Route path="/Haruka" element={<Haruka />} />
       </Routes>
     </BrowserRouter>
   );
