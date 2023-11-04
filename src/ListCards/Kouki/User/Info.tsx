@@ -35,7 +35,7 @@ export const Info = (props: Props) => {
               </a>
             </div>
           )}
-          {/* 応用編: 好きなサイトに飛べるボタンを作成しよう */}
+          {a href= {YouTubeLink} <span>YouTube</span> </a>}
         </div>
       </section>
     </>
