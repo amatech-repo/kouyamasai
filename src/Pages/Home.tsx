@@ -32,6 +32,8 @@ const Home = () => {
                 </Link>
                 <Link to="/yukkun" className='ParentCard'>
                     <div className='ChildCard'>ゆっくん</div>
+                <Link to="/Kouchan" className='ParentCard'>
+                    <div className='ChildCard'>こうちゃん</div>
                 </Link>
       </div>
     </div>
