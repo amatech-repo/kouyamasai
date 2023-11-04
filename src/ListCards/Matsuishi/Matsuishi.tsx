@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./SampleCard.css";
+import "./Matsuishi.css";
 import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 SampleCard
-const SampleCard = () => {
+// 例 Matsuishi
+const Matsuishi = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -83,4 +83,4 @@ const SampleCard = () => {
   );
 };
 
-export default SampleCard;
+export default Matsuishi;
