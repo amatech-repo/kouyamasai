@@ -9,9 +9,9 @@ import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
 import { Events } from "../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
-// 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
 // 例 SampleCard
+// この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
 const SampleCard = () => {
   const [isFlip, setIsFlip] = useState(false);
 
