@@ -33,6 +33,10 @@ const Home = () => {
                 <Link to="/Kouchan" className='ParentCard'>
                     <div className='ChildCard'>こうちゃん</div>
                 </Link>
+
+                <Link to="/Haruka" className="ParentCard">
+          <div className="ChildCard">はるか</div>
+        </Link>          
       </div>
     </div>
   );

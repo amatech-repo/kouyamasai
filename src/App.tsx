@@ -8,6 +8,7 @@ import Home from "./Pages/Home.tsx";
 import Kouki from "./ListCards/Kouki/Kouki.tsx";
 import Saori from "./ListCards/Saori/Saori.tsx";
 import Kouchan from "./ListCards/Kouchan/Kouchan.tsx";
+import Haruka from "./ListCards/Haruka/Haruka.tsx";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/Jojo" element={<Jojo />} />
         <Route path="/Saori" element={<Saori />} />
         <Route path="/Kouchan" element={<Kouchan />} />
+        <Route path="/Haruka" element={<Haruka />} />
         
       </Routes>
     </BrowserRouter>
