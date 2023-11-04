@@ -48,6 +48,9 @@ const Kouki = () => {
               {/* リンクがない方はURLを削除してください */}
               <Footer
                 twitterLink="https://twitter.com/mistltoe08"
+                githubLink="https://github.com/maple-fm"
+                instagramLink=""
+                linkedinLink=""
               />
             </section>
           </div>
