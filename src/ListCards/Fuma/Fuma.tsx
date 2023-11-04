@@ -30,25 +30,25 @@ const Fuma = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="あまてく太郎"
-                label="情報科学部・3年"
+                name="ふうま"
+                label="京都産業大学 情報理工学部　4年"
                 mail=""
-                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
+                YoutubeLink=""
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。" />
+              <About aboutText="iOSエンジニアです" />
 
-              {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="旅行と写真撮影と読書が趣味です！特に台湾の文化や風景が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
+              {/* 入門編: あなたの趣味は何ですか？*/}
+              <Hobby hobbyText="最近よくNetflixでアニメを見ています。この前はBLEACHを見ていました。今はエヴァンゲリオンを見始めました" />
 
-              {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
+              {/* 入門編: あなたが今興味を持っていることは何ですか？*/}
+              <Interest interestText="デザインについて興味があります。UI/UXだけではなく、チラシやポスターのデザインにも興味が湧きました" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/amatech1006"
-                githubLink="https://github.com/amatech-repo"
+                twitterLink="https://twitter.com/25maplen"
+                githubLink="https://github.com/maple-fm"
                 instagramLink=""
                 linkedinLink=""
               />
