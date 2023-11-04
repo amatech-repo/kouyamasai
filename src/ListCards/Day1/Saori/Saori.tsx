@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Haruki.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Saori.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 SampleCard
-const Haruki = () => {
+// 例 Saori
+const Saori = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -24,26 +24,25 @@ const Haruki = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipSpeedBackToFront={0.5} flipSpeedFrontToBack={0.5} flipDirection="vertical">
-          
+        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="宮井 陽光"
-                label="理工学部・２年"
+                name="さおり"
+                label="高校二年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="大学ではパソコンでゲームの製作をしています" />
+              <About aboutText="志望校探しています" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="ホロライブとバイクツーリングが趣味です" />
+              <Hobby hobbyText="tiktokを見ている" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="ホロライブの動画を見たり、どんなゲームを作ろうか考えてます。最近はVRのゲームを作ろうと思ってます。" />
+              <Interest interestText="漢検の勉強している" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
@@ -84,4 +83,4 @@ const Haruki = () => {
   );
 };
 
-export default Haruki;
+export default Saori;

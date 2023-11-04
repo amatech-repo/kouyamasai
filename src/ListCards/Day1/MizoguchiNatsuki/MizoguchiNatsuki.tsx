@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Yukkun.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./MizoguchiNatsuki.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Yukkun
-const Yukkun = () => {
+// 例 MizoguchiNatsuki
+const MizoguchiNatsuki = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,19 +30,19 @@ const Yukkun = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="ゆっくん"
-                label="社会人"
-                mail="yukkun0620@gmail.com"
+                name="溝口夏樹"
+                label="コンピュータ理工学部2期生　2013年卒"
+                mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="会社では、ものづくりに取り組んでいます。" />
+              <About aboutText="名古屋の独立系IT企業に勤務。某自動車会社のシステム改修やってる。最近忙しい。" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="散歩とゲームと競馬が趣味です！" />
+              <Hobby hobbyText="ゲーム、動画視聴、読書等。大学の後輩から中国SFの三体を読めと言われ続け夏から一気読みした。" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="" />
+              <Interest interestText="twitterの情報を収集してブラウザから見るシステムを作ろうとダラダラしている内にAPIが変わりXに変わり。AI関連の勉強をしてみようとG検定を取得。E検定勉強中。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
@@ -83,4 +83,4 @@ const Yukkun = () => {
   );
 };
 
-export default Yukkun;
+export default MizoguchiNatsuki;

@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Kouki.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Kouchan.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // 名刺の名前を変更してみましょう！
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Kouki
-const Kouki = () => {
+// 例 Kouchan
+const Kouchan = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -24,31 +24,31 @@ const Kouki = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal" flipSpeedBackToFront = {0.8} flipSpeedFrontToBack = {0.9}>
+        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="本多 光輝"
-                label="理学部・４年" 
-                mail =""
-                YoutubeLink = ""
+                name="こうちゃん"
+                label="情報科学部・3年"
+                mail=""
+                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="大学では天文学を学んでいます。" />
+              <About aboutText="しょうぎがんばってます" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Hobby hobbyText="ゲームをよくしています。" />
+              <Hobby hobbyText="プログラムきょうしつ" />
 
               {/* 入門編: あなたの好きなことは何ですか？毎日よくしていることを書いてみましょう！ */}
-              <Interest interestText="毎日やっているわけではないのですが、最近はUnityをよくいじっています。" />
+              <Interest interestText="ボードゲーム" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/mistltoe08"
-                githubLink=""
+                twitterLink="https://twitter.com/amatech1006"
+                githubLink="https://github.com/amatech-repo"
                 instagramLink=""
                 linkedinLink=""
               />
@@ -83,4 +83,4 @@ const Kouki = () => {
   );
 };
 
-export default Kouki;
+export default Kouchan;
