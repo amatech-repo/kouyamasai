@@ -121,7 +121,7 @@ li {
   font-weight: 700;
   margin-top: 1.3125em;
   color: #003e70;
-  border:3px solid #003e70;
+  /* border:3px solid #003e70; */
 }
 
 .stack {

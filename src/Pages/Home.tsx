@@ -2,6 +2,20 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+  const names = [
+    "fuma",
+    "Takutaku",
+    "YoshikawaMasaya",
+    "MizoguchiNatsuki",
+    "Haruki",
+    "Haruka",
+    "kouki",
+    "Jojo",
+    "Saori",
+    "Kouchan",
+    "Yukkun",
+    "Kaho",
+  ];
   return (
     <div className="Page">
       <h1>名刺一覧！！</h1>
@@ -14,62 +28,19 @@ const Home = () => {
         {/* **はディレクトリ名と同じ */}
         {/* 〇〇には来場者さんの好きな名前を設定してください */}
         {/* 参考例:
-                <Link to="/**" className='ParentCard'>
-                    <div className='ChildCard'>〇〇</div>
-                </Link>
-                */}
-        <Link to="/fuma" className="ParentCard">
-          <div className="ChildCard">ふうま</div>
-        </Link>
-        <Link to="/kouki" className="ParentCard">
-          <div className="ChildCard">こうき</div>
-        </Link>
-        <Link to="/Jojo" className="ParentCard">
-          <div className="ChildCard">Jojo</div>
-        </Link>
-        <Link to="/Saori" className="ParentCard">
-          <div className="ChildCard">さおり</div>
-        </Link>
-        <Link to="/Kouchan" className="ParentCard">
-          <div className="ChildCard">こうちゃん</div>
-        </Link>
-        <Link to="/Yumino" className="ParentCard">
-          <div className="ChildCard">ゆみのさん</div>
-        </Link>
-        <Link to="/MizoguchiNatsuki" className="ParentCard">
-          <div className="ChildCard">みぞぐちなつき</div>
-        </Link>
-        <Link to="/takutaku" className="ParentCard">
-          <div className="ChildCard">Takutaku</div>
-        </Link>
-        <Link to="/YoshikawaMasaya" className="ParentCard">
-          <div className="ChildCard">YoshikawaMasaya</div>
-        </Link>
-        <Link to="/Yukkun" className="ParentCard">
-          <div className="ChildCard">ゆっくん</div>
-        </Link>
-        <Link to="/Saori" className="ParentCard">
-          <div className="ChildCard">さおり</div>
-        </Link>
-        <Link to="/Kouchan" className="ParentCard">
-          <div className="ChildCard">こうちゃん</div>
-        </Link>
-
-        <Link to="/Haruka" className="ParentCard">
-          <div className="ChildCard">はるか</div>
-        </Link>
-        <Link to="/Saori" className="ParentCard">
-          <div className="ChildCard">さおり</div>
-        </Link>
-        <Link to="/Kouchan" className="ParentCard">
-          <div className="ChildCard">こうちゃん</div>
-        </Link>
-        <Link to="/Haruki" className="ParentCard">
-          <div className="ChildCard">はるき</div>
-        </Link>
-        <Link to="/Kaho" className="ParentCard">
-          <div className="ChildCard"> かほ</div>
-        </Link>
+          <Link to="/**" className='ParentCard'>
+              <div className='ChildCard'>〇〇</div>
+          </Link>
+        */}
+        {names.map((name, index) => (
+          <Link
+            key={index}
+            to={`/${encodeURIComponent(name)}`}
+            className="ParentCard"
+          >
+            <div className="ChildCard">{name}</div>
+          </Link>
+        ))}
       </div>
     </div>
   );
