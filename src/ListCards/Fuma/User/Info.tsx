@@ -38,6 +38,9 @@ export const Info = (props: Props) => {
             </div>
           )}
           {/* 応用編: 好きなサイトに飛べるボタンを作成しよう */}
+          <a href="" target="_" rel="noopener noreferrer">
+            <span>あまてくHP</span>
+          </a>
         </div>
       </section>
     </>
