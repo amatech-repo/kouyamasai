@@ -20,6 +20,7 @@ import Koncha from "./ListCards/Koncha/Koncha";
 import Sunge from "./ListCards/Sunge/Sunge";
 import Ren from "./ListCards/Ren/Ren";
 import Ryuki from "./ListCards/Ryuki/Ryuki";
+import Yuuka from "./ListCards/Yuuka/Yuuka";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -47,7 +48,8 @@ const CardDetail = () => {
     Koncha: <Koncha />,
     Ryuki: <Ryuki />,
     Sunge: <Sunge />,
-    Ren: <Ren />
+    Ren: <Ren />,
+    Yuuka: <Yuuka />,
   };
 
   const CardComponent = cardComponents[cardName!];
