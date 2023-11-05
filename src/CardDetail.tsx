@@ -15,6 +15,7 @@ import Yukkun from "./ListCards/Day1/Yukkun/Yukkun";
 import Kaho from "./ListCards/Day1/Kaho/Kaho";
 import Deguchi from "./ListCards/Day1/Deguchi/Deguchi";
 import Yumino from "./ListCards/Day1/Yumino/Yumino";
+import Test from "./amatech-repo/kouyamasai/src/ListCards/SampleCards test";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
