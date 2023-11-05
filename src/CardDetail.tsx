@@ -15,6 +15,7 @@ import Yukkun from "./ListCards/Day1/Yukkun/Yukkun";
 import Kaho from "./ListCards/Day1/Kaho/Kaho";
 import Deguchi from "./ListCards/Day1/Deguchi/Deguchi";
 import Yumino from "./ListCards/Day1/Yumino/Yumino";
+import Oriduru from "./ListCards/oriduru/Oriduru";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -38,6 +39,7 @@ const CardDetail = () => {
     Kaho: <Kaho />,
     Deguchi: <Deguchi />,
     Yumino: <Yumino />,
+    Oriduru: <Oriduru />,
   };
 
   const CardComponent = cardComponents[cardName!];
