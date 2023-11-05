@@ -22,6 +22,7 @@ import Ren from "./ListCards/Ren/Ren";
 import Ryuki from "./ListCards/Ryuki/Ryuki";
 import Yuuka from "./ListCards/Yuuka/Yuuka";
 import Testukun from "./ListCards/Testukun/Testukun";
+import Nanami from "./ListCards/Nanami/Nanami";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -52,6 +53,7 @@ const CardDetail = () => {
     Ren: <Ren />,
     Yuuka: <Yuuka />,
     Testukun: <Testukun />,
+    Nanami: <Nanami />,
   };
 
   const CardComponent = cardComponents[cardName!];
