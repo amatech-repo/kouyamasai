@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Testukun.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Nanami.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Testukun
+// 例 Nanami
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const Testukun = () => {
+const Nanami = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -24,30 +24,30 @@ const Testukun = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipDirection="vertical">
+        <ReactCardFlip isFlipped={isFlip} flipDirection="horizontal">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="てつくん"
-                label="地理学科・3年"
+                name="松尾七海"
+                label="情報理工学部・2年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="大学では交通地理を学んでおり、鉄道と都市に興味を持って研究しています。" />
+              <About aboutText="あまてくに参加しています" />
 
               {/* 入門編: あなたの趣味はなんですか？*/}
-              <Hobby hobbyText="鉄道旅行と散歩が趣味です。特に日本の鉄道が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
+              <Hobby hobbyText="バレエ" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="台湾の鉄道や文化に興味があります。" />
+              <Interest interestText="AWS" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink=""
+                twitterLink="https://twitter.com/773_ise_"
                 githubLink=""
                 instagramLink=""
                 linkedinLink=""
@@ -83,4 +83,4 @@ const Testukun = () => {
   );
 };
 
-export default Testukun;
+export default Nanami;

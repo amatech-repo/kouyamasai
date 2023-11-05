@@ -15,19 +15,19 @@ import Yukkun from "./ListCards/Day1/Yukkun/Yukkun";
 import Kaho from "./ListCards/Day1/Kaho/Kaho";
 import Deguchi from "./ListCards/Day1/Deguchi/Deguchi";
 import Yumino from "./ListCards/Day1/Yumino/Yumino";
-import Oriduru from "./ListCards/oriduru/Oriduru";
-import Koncha from "./ListCards/Koncha/Koncha";
-import Sunge from "./ListCards/Sunge/Sunge";
-import Ren from "./ListCards/Ren/Ren";
-import Hinako from "./ListCards/Hinako/Hinako"
-import Ryuki from "./ListCards/Ryuki/Ryuki";
-import Mei from "./ListCards/Mei/Mei";
-import Yuuka from "./ListCards/Yuuka/Yuuka";
-import Testukun from "./ListCards/Testukun/Testukun";
-import Nanami from "./ListCards/Nanami/Nanami";
-import Ken from "./ListCards/Ken/Ken";
-import Taniyan from "./ListCards/Taniyan/Taniyan";
-import Tish from "./ListCards/Tish/Tish";
+import Oriduru from "./ListCards/Day2/oriduru/Oriduru";
+import Koncha from "./ListCards/Day2/Koncha/Koncha";
+import Sunge from "./ListCards/Day2/Sunge/Sunge";
+import Ren from "./ListCards/Day2/Ren/Ren";
+import Hinako from "./ListCards/Day2/Hinako/Hinako";
+import Ryuki from "./ListCards/Day2/Ryuki/Ryuki";
+import Mei from "./ListCards/Day2/Mei/Mei";
+import Yuuka from "./ListCards/Day2/Yuuka/Yuuka";
+import Testukun from "./ListCards/Day2/Testukun/Testukun";
+import Nanami from "./ListCards/Day2/Nanami/Nanami";
+import Ken from "./ListCards/Day2/Ken/Ken";
+import Taniyan from "./ListCards/Day2/Taniyan/Taniyan";
+import Tish from "./ListCards/Day2/Tish/Tish";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();

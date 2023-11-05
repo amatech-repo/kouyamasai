@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Nanami.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Hinako.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Nanami
+// 例 Hinako
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const Nanami = () => {
+const Hinako = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,25 +30,25 @@ const Nanami = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="松尾七海"
-                label="情報理工学部・2年"
+                name="ひなこ"
+                label="小学3年生"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="あまてくに参加しています" />
+              <About aboutText="９さいです。すきな、アニメは、ウマ娘です。" />
 
               {/* 入門編: あなたの趣味はなんですか？*/}
-              <Hobby hobbyText="バレエ" />
+              <Hobby hobbyText="絵をかくことが、すきです。" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="AWS" />
+              <Interest interestText="将来は、アイドルです。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/773_ise_"
-                githubLink=""
+                twitterLink="https://twitter.com/amatech1006"
+                githubLink="https://github.com/amatech-repo"
                 instagramLink=""
                 linkedinLink=""
               />
@@ -83,4 +83,4 @@ const Nanami = () => {
   );
 };
 
-export default Nanami;
+export default Hinako;

@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Taniyan.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Mei.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Taniyan
+// 例 Mei
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const Taniyan = () => {
+const Mei = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,26 +30,26 @@ const Taniyan = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="TANIYAN"
-                label="理学部・2年"
+                name="めい"
+                label="２ねんせい"
                 mail=""
-                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
+                YoutubeLink="https://www.youtube.com/@precure"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="数理科学科として日々数学に励んでいます…たぶん。" />
+              <About aboutText="おもしろいほんがすきです。" />
 
               {/* 入門編: あなたの趣味はなんですか？*/}
-              <Hobby hobbyText="数学が趣味！特に長期休暇中は友人と自主ゼミを開いて勉強してます！" />
+              <Hobby hobbyText="ともだちとほんをかいています。" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="数学の分野で特に多様体というものに興味があります！" />
+              <Interest interestText="かしゅになることです。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/TT72949291"
+                twitterLink=""
                 githubLink=""
-                instagramLink="https://instagram.com/tnymtig2"
+                instagramLink=""
                 linkedinLink=""
               />
             </section>
@@ -83,4 +83,4 @@ const Taniyan = () => {
   );
 };
 
-export default Taniyan;
+export default Mei;

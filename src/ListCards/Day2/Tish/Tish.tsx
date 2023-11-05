@@ -5,8 +5,8 @@ import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
 import "./Tish.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
@@ -24,7 +24,10 @@ const Tish = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipDirection="vertical" flipSpeedBackToFront = {0.6}>
+        <ReactCardFlip
+          isFlipped={isFlip}
+          flipDirection="vertical"
+          flipSpeedBackToFront={0.6}>
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">

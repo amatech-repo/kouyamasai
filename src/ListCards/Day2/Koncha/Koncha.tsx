@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Ryuki.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Koncha.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Ryuki
+// 例 Koncha
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const Ryuki = () => {
+const Koncha = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,26 +30,25 @@ const Ryuki = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="りゅうき"
-                label="法学部・2年"
+                name="こんちゃ"
+                label="京都産業大学卒業生"
                 mail=""
-                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
+                YoutubeLink=""
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="大学で法律と韓国語を勉強しています。来年留学したいです！"
-        />
+              <About aboutText="大学時代は競技プログラミングをメインに、たまにゲームを作ったりしてました。卒業後は関東に引っ越して現在はエンジニアとして働いています。" />
 
               {/* 入門編: あなたの趣味はなんですか？*/}
-              <Hobby hobbyText="友達と遊びに行ったり、スタバの新作を飲みに行くことです" />
+              <Hobby hobbyText="最近はアニメばかり見てます。" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="民法の勉強です。" />
+              <Interest interestText="いい加減フロントエンドのモダンな書き方を勉強しないとやばいです。" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink=""
-                githubLink=""
+                twitterLink="https://twitter.com/amatech1006"
+                githubLink="https://github.com/amatech-repo"
                 instagramLink=""
                 linkedinLink=""
               />
@@ -84,4 +83,4 @@ const Ryuki = () => {
   );
 };
 
-export default Ryuki;
+export default Koncha;
