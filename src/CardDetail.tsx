@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 // 最後尾に新しいimport文を追加してください
-// 参考例: import SampleCard from "./ListCards/SampleCard/SampleCard";
+// 参考例: import Ryuki from "./ListCards/Ryuki/Ryuki";
 import Fuma from "./ListCards/Day1/Fuma/Fuma";
 import Takutaku from "./ListCards/Day1/Takutaku/Takutaku";
 import YoshikawaMasaya from "./ListCards/Day1/YoshikawaMasaya/YoshikawaMasaya";
@@ -17,8 +17,12 @@ import Deguchi from "./ListCards/Day1/Deguchi/Deguchi";
 import Yumino from "./ListCards/Day1/Yumino/Yumino";
 import Oriduru from "./ListCards/oriduru/Oriduru";
 import Koncha from "./ListCards/Koncha/Koncha";
+import Sunge from "./ListCards/Sunge/Sunge";
 import Ren from "./ListCards/Ren/Ren";
 import Hinako from "./ListCards/Hinako/Hinako"
+import Ryuki from "./ListCards/Ryuki/Ryuki";
+import Yuuka from "./ListCards/Yuuka/Yuuka";
+
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -27,7 +31,7 @@ const CardDetail = () => {
     // 最後尾に参考例を元に追加してください
     // キー: URLのパス名
     // 値: コンポーネント
-    // 参考例: SampleCard: <SampleCard />,
+    // 参考例: Ryuki: <Ryuki />,
     Fuma: <Fuma />,
     Takutaku: <Takutaku />,
     Yoshikawamasaya: <YoshikawaMasaya />,
@@ -46,6 +50,10 @@ const CardDetail = () => {
     Koncha: <Koncha />,
     Ren: <Ren />,
     Hinako: <Hinako />,
+    Ryuki: <Ryuki />,
+    Sunge: <Sunge />,
+    Ren: <Ren />,
+    Yuuka: <Yuuka />,
   };
 
   const CardComponent = cardComponents[cardName!];
