@@ -20,6 +20,7 @@ import Koncha from "./ListCards/Koncha/Koncha";
 import Sunge from "./ListCards/Sunge/Sunge";
 import Ren from "./ListCards/Ren/Ren";
 import Ryuki from "./ListCards/Ryuki/Ryuki";
+import Mei from "./ListCards/Mei/Mei";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
