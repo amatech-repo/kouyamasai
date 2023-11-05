@@ -24,7 +24,7 @@ const Testukun = () => {
       <main className="main">
         {/* 応用編: 回転の速度を変えてみよう */}
         {/* 番外: 回転方法を縦にしよう */}
-        <ReactCardFlip isFlipped={isFlip} flipDrection="vertical">
+        <ReactCardFlip isFlipped={isFlip} flipDirection="vertical">
           {/* 個人の名刺 */}
           <div className="front" onClick={() => handleClick()}>
             <section className="main__section">
