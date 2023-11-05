@@ -42,7 +42,7 @@ const Home = () => {
       <p>プログラミング体験会へのご参加ありがとうございました！</p>
       <div className="List">
         <Link to="/samplecards" className="ParentCard">
-          <div className="ChildCard">あまてく太郎</div>
+          <div className="ChildCard">見本:あまてく太郎</div>
         </Link>
         {names.map((name, index) => (
           <Link
