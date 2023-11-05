@@ -81,43 +81,28 @@ if git show-ref --verify --quiet "refs/heads/$NEW_BRANCH_NAME"; then
   exit_with_error "ブランチ '$NEW_BRANCH_NAME' はすでに存在しています。"
 fi
 
-# 既存のブランチがあるかチェック
-if git show-ref --verify --quiet "refs/heads/$NEW_BRANCH_NAME"; then
-  # 現在のブランチ名を取得
-  current_branch=$(git symbolic-ref --short HEAD)
-  # 現在のブランチが新しいブランチ名と同じなら、ブランチ作成をスキップ
-  if [ "$current_branch" = "$NEW_BRANCH_NAME" ]; then
-    echo "既に '$NEW_BRANCH_NAME' ブランチにいます。ブランチ作成をスキップします。"
-    # ここで1.の工程をスキップするためには、次の工程に直接進みます。
-  else
-    exit_with_error "ブランチ '$NEW_BRANCH_NAME' はすでに存在しています。"
-  fi
-else
-  # 1. リモートのmainから最新の変更を取り込んだ状態でブランチを作成
-  git fetch origin main || exit_with_error "mainブランチをフェッチできません。"
-  git checkout -b $NEW_BRANCH_NAME origin/main || exit_with_error "'$NEW_BRANCH_NAME' ブランチを作成してチェックアウトできません。"
-fi
+# 1. リモートのmainから最新の変更を取り込んだ状態でブランチを作成
+git switch main || exit_with_error "mainブランチにチェックアウトできません。"
+git fetch || exit_with_error "mainブランチをフェッチできません。"
+git pull origin main || exit_with_error "mainブランチをプルできません。"
+git checkout -b $NEW_BRANCH_NAME origin/main || exit_with_error "'$NEW_BRANCH_NAME' ブランチを作成してチェックアウトできません。"
 
-# 既に目的のブランチにいる場合は、ブランチの作成とチェックアウトをスキップして、
-# ファイル操作の工程に直接進む
-if [ "$current_branch" != "$NEW_BRANCH_NAME" ]; then
-  # 2. src/ListCards/SampleCards/*を任意のディレクトリ名で作成
-  mkdir -p "src/ListCards/$NEW_DIR_NAME" || exit_with_error "'src/ListCards/$NEW_DIR_NAME' ディレクトリを作成できません。"
-  cp -r src/ListCards/SampleCards/* "src/ListCards/$NEW_DIR_NAME/" || exit_with_error "'src/ListCards/$NEW_DIR_NAME' にファイルをコピーできません。"
+# 2. src/ListCards/SampleCards/*を任意のディレクトリ名で作成
+mkdir -p "src/ListCards/$NEW_DIR_NAME" || exit_with_error "'src/ListCards/$NEW_DIR_NAME' ディレクトリを作成できません。"
+cp -r src/ListCards/SampleCards/* "src/ListCards/$NEW_DIR_NAME/" || exit_with_error "'src/ListCards/$NEW_DIR_NAME' にファイルをコピーできません。"
 
-  # 3. 指定したディレクトリ名にSampleCard.tsxをディレクトリ名.tsxに変更
-  mv "src/ListCards/SampleCards/SampleCard.tsx" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.tsx" || exit_with_error "SampleCard.tsx を $NEW_DIR_NAME.tsx に名前変更できません。"
+# 3. 指定したディレクトリ名にSampleCard.tsxをディレクトリ名.tsxに変更
+mv "src/ListCards/SampleCards/SampleCard.tsx" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.tsx" || exit_with_error "SampleCard.tsx を $NEW_DIR_NAME.tsx に名前変更できません。"
 
-  # 4. 同様にSampleCard.cssも変更
-  mv "src/ListCards/SampleCards/SampleCard.css" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.css" || exit_with_error "SampleCard.css を $NEW_DIR_NAME.css に名前変更できません。"
+# 4. 同様にSampleCard.cssも変更
+mv "src/ListCards/SampleCards/SampleCard.css" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.css" || exit_with_error "SampleCard.css を $NEW_DIR_NAME.css に名前変更できません。"
 
-  # 5. 指定したディレクトリ名にSampleCard.tsx内のSampleCardという単語を全変換
-  sed -i '' "s/SampleCard/$NEW_DIR_NAME/g" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.tsx" || exit_with_error "'$NEW_DIR_NAME.tsx' 内の 'SampleCard' を '$NEW_DIR_NAME' に置換できません。"
+# 5. 指定したディレクトリ名にSampleCard.tsx内のSampleCardという単語を全変換
+sed -i '' "s/SampleCard/$NEW_DIR_NAME/g" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.tsx" || exit_with_error "'$NEW_DIR_NAME.tsx' 内の 'SampleCard' を '$NEW_DIR_NAME' に置換できません。"
 
-  # 6. Home.tsx ファイル内のnames配列の最後に新しいエントリを追加
-  HOME_TSX_PATH="src/Pages/Home.tsx"
-  sed -i '' "/];/i \    { path: '${NEW_PATH}', name: '${NEW_NAME}' }," $HOME_TSX_PATH || exit_with_error "Home.tsx に新しいエントリを追加できません。"
+# 6. Home.tsx ファイル内のnames配列の最後に新しいエントリを追加
+HOME_TSX_PATH="src/Pages/Home.tsx"
+sed -i '' "/];/i \    { path: '${NEW_PATH}', name: '${NEW_NAME}' }," $HOME_TSX_PATH || exit_with_error "./src/Pages/Home.tsx に新しいエントリを追加できませんでした。手動で追加してください。"
 
-  echo "処理が正常に完了しました。"
-
-fi
+echo "処理が正常に完了しました。\n"
+echo "src/CardDetail.tsxに作成した${NEW_DIR_NAME}を追加(import)してください。"
