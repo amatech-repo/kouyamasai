@@ -22,6 +22,7 @@ import Ren from "./ListCards/Ren/Ren";
 import Hinako from "./ListCards/Hinako/Hinako"
 import Ryuki from "./ListCards/Ryuki/Ryuki";
 import Yuuka from "./ListCards/Yuuka/Yuuka";
+import Ken from "./ListCards/Ken/Ken";
 
 
 const CardDetail = () => {
@@ -53,6 +54,7 @@ const CardDetail = () => {
     Ryuki: <Ryuki />,
     Sunge: <Sunge />,
     Yuuka: <Yuuka />,
+    Ken: <Ken />,
   };
 
   const CardComponent = cardComponents[cardName!];
