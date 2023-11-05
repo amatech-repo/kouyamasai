@@ -21,6 +21,7 @@ import Sunge from "./ListCards/Sunge/Sunge";
 import Ren from "./ListCards/Ren/Ren";
 import Ryuki from "./ListCards/Ryuki/Ryuki";
 import Yuuka from "./ListCards/Yuuka/Yuuka";
+import Testukun from "./ListCards/Testukun/Testukun";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -50,6 +51,7 @@ const CardDetail = () => {
     Sunge: <Sunge />,
     Ren: <Ren />,
     Yuuka: <Yuuka />,
+    Testukun: <Testukun />,
   };
 
   const CardComponent = cardComponents[cardName!];
