@@ -47,7 +47,8 @@ const CardDetail = () => {
     Koncha: <Koncha />,
     Ryuki: <Ryuki />,
     Sunge: <Sunge />,
-    Ren: <Ren />
+    Ren: <Ren />,
+    Mei: <Mei />,
   };
 
   const CardComponent = cardComponents[cardName!];
