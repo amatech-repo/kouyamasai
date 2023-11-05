@@ -2,4 +2,4 @@
 https://lit.link/amatech
 
 # アプリ
-https://kouyamasai-five.vercel.app/
+https://koyamasai.netlify.app/
