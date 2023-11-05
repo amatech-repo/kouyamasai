@@ -24,7 +24,7 @@ const Home = () => {
     { path: "Oriduru", name: "おりづる" },
     { path: "Koncha", name: "こんちゃ" },
     { path: "Ren", name: "Ren" },
-    { path: 'Ryuki', name: 'サンプル' },
+    { path: 'Ryuki', name: 'りゅうき' },
 
   ];
 
