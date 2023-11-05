@@ -47,7 +47,7 @@ const Taniyan = () => {
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/TT2949291"
+                twitterLink="https://twitter.com/TT72949291"
                 githubLink=""
                 instagramLink="https://instagram.com/tnymtig2"
                 linkedinLink=""
