@@ -24,6 +24,7 @@ import Ryuki from "./ListCards/Ryuki/Ryuki";
 import Yuuka from "./ListCards/Yuuka/Yuuka";
 import Testukun from "./ListCards/Testukun/Testukun";
 import Nanami from "./ListCards/Nanami/Nanami";
+import Ken from "./ListCards/Ken/Ken";
 
 
 const CardDetail = () => {
@@ -57,6 +58,7 @@ const CardDetail = () => {
     Yuuka: <Yuuka />,
     Testukun: <Testukun />,
     Nanami: <Nanami />,
+    Ken: <Ken />,
   };
 
   const CardComponent = cardComponents[cardName!];
