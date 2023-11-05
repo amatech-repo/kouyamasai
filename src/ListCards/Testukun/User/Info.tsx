@@ -36,9 +36,9 @@ export const Info = (props: Props) => {
             </div>
           )}
           {/* 応用編: 好きなサイトに飛べるボタンを作成しよう */}
-          <a href={"https://kamo.apreed.com/#google_vignette"}>
+          <a href="https://kamo.apreed.com/#google_vignette">
             <span>貨物ちゃんねる</span>
-            </a>
+          </a>
         </div>
       </section>
     </>
