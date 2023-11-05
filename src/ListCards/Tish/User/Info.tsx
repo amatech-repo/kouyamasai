@@ -36,6 +36,9 @@ export const Info = (props: Props) => {
             </div>
           )}
           {/* 応用編: 好きなサイトに飛べるボタンを作成しよう */}
+            <a href="https://www.youtube.com/watch?v=EVq6z3j6OPA">
+              <span>Youtube</span>
+            </a>
         </div>
       </section>
     </>
