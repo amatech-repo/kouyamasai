@@ -85,7 +85,7 @@ fi
 git switch main || exit_with_error "mainブランチにチェックアウトできません。"
 git fetch || exit_with_error "mainブランチをフェッチできません。"
 git pull origin main || exit_with_error "mainブランチをプルできません。"
-git checkout -b $NEW_BRANCH_NAME origin/main || exit_with_error "'$NEW_BRANCH_NAME' ブランチを作成してチェックアウトできません。"
+git checkout -b $NEW_BRANCH_NAME || exit_with_error "'$NEW_BRANCH_NAME' ブランチを作成してチェックアウトできません。"
 
 # 2. src/ListCards/SampleCards/*を任意のディレクトリ名で作成
 mkdir -p "src/ListCards/$NEW_DIR_NAME" || exit_with_error "'src/ListCards/$NEW_DIR_NAME' ディレクトリを作成できません。"
@@ -93,6 +93,8 @@ cp -r src/ListCards/SampleCards/* "src/ListCards/$NEW_DIR_NAME/" || exit_with_er
 
 # 3. 指定したディレクトリ名にSampleCard.tsxをディレクトリ名.tsxに変更
 mv "src/ListCards/SampleCards/SampleCard.tsx" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.tsx" || exit_with_error "SampleCard.tsx を $NEW_DIR_NAME.tsx に名前変更できません。"
+rm -rf "src/ListCards/$NEW_DIR_NAME/SampleCard.tsx" || exit_with_error "src/ListCards/$NEW_DIR_NAME/SampleCard.tsx を削除できません。"
+rm -rf "src/ListCards/$NEW_DIR_NAME/SampleCard.css" || exit_with_error "src/ListCards/$NEW_DIR_NAME/SampleCard.css を削除できません。"
 
 # 4. 同様にSampleCard.cssも変更
 mv "src/ListCards/SampleCards/SampleCard.css" "src/ListCards/$NEW_DIR_NAME/$NEW_DIR_NAME.css" || exit_with_error "SampleCard.css を $NEW_DIR_NAME.css に名前変更できません。"
