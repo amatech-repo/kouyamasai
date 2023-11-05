@@ -21,12 +21,12 @@ import Sunge from "./ListCards/Sunge/Sunge";
 import Ren from "./ListCards/Ren/Ren";
 import Hinako from "./ListCards/Hinako/Hinako"
 import Ryuki from "./ListCards/Ryuki/Ryuki";
+import Mei from "./ListCards/Mei/Mei";
 import Yuuka from "./ListCards/Yuuka/Yuuka";
 import Testukun from "./ListCards/Testukun/Testukun";
 import Nanami from "./ListCards/Nanami/Nanami";
 import Ken from "./ListCards/Ken/Ken";
 import Taniyan from "./ListCards/Taniyan/Taniyan";
-
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -56,6 +56,7 @@ const CardDetail = () => {
     Hinako: <Hinako />,
     Ryuki: <Ryuki />,
     Sunge: <Sunge />,
+    Mei: <Mei />,
     Yuuka: <Yuuka />,
     Testukun: <Testukun />,
     Nanami: <Nanami />,
