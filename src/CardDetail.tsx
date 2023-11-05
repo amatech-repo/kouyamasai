@@ -44,7 +44,7 @@ const CardDetail = () => {
     Yumino: <Yumino />,
     Oriduru: <Oriduru />,
     Koncha: <Koncha />,
-    Ren: <Ren />
+    Ren: <Ren />,
     Ryuki: <Ryuki />,
   };
 
