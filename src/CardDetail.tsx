@@ -18,6 +18,7 @@ import Yumino from "./ListCards/Day1/Yumino/Yumino";
 import Oriduru from "./ListCards/oriduru/Oriduru";
 import Koncha from "./ListCards/Koncha/Koncha";
 import Sunge from "./ListCards/Sunge/Sunge";
+import Ren from "./ListCards/Ren/Ren";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -44,7 +45,7 @@ const CardDetail = () => {
     Oriduru: <Oriduru />,
     Koncha: <Koncha />,
     Sunge: <Sunge />,
-
+    Ren: <Ren />
   };
 
   const CardComponent = cardComponents[cardName!];
