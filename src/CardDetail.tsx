@@ -27,6 +27,7 @@ import Testukun from "./ListCards/Testukun/Testukun";
 import Nanami from "./ListCards/Nanami/Nanami";
 import Ken from "./ListCards/Ken/Ken";
 import Taniyan from "./ListCards/Taniyan/Taniyan";
+import Tish from "./ListCards/Tish/Tish";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -62,6 +63,7 @@ const CardDetail = () => {
     Nanami: <Nanami />,
     Ken: <Ken />,
     Taniyan: <Taniyan />,
+    Tish: <Tish />,
   };
 
   const CardComponent = cardComponents[cardName!];
