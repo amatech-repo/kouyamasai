@@ -30,10 +30,10 @@ const Sunge = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="あまてく太郎"
-                label="情報科学部・3年"
+                name="スンジェ"
+                label="情報科学部・２年"
                 mail=""
-                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
+                YoutubeLink="https://www.youtube.com/watch?v=XSxLiKq8_Ms"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
               <About aboutText="大学では情報科学を学んでおり、特にデータ解析と機械学習に興味を持って研究しています。" />
@@ -42,7 +42,7 @@ const Sunge = () => {
               <Hobby hobbyText="旅行と写真撮影と読書が趣味です！特に台湾の文化や風景が好きです。休日には都市の風景や友人たちを撮影しています。最近はミステリーや東野圭吾の本を読んでいます。" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="人工知能と社会についての勉強、モバイルアプリケーション、デザイン思考についての勉強に興味があります。" />
+              <Interest interestText="" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
