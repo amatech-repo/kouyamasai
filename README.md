@@ -28,3 +28,6 @@ If you are developing a production application, we recommend updating the config
 
 # スライド資料
 https://lit.link/amatech
+
+# アプリ
+https://koyamasai.netlify.app/
