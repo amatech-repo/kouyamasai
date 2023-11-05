@@ -16,7 +16,8 @@ import Kaho from "./ListCards/Day1/Kaho/Kaho";
 import Deguchi from "./ListCards/Day1/Deguchi/Deguchi";
 import Yumino from "./ListCards/Day1/Yumino/Yumino";
 import Test from "./amatech-repo/kouyamasai/src/ListCards/SampleCards test";
-
+import Oriduru from "./ListCards/oriduru/Oriduru";
+        
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
 
@@ -39,6 +40,7 @@ const CardDetail = () => {
     Kaho: <Kaho />,
     Deguchi: <Deguchi />,
     Yumino: <Yumino />,
+    Oriduru: <Oriduru />,
   };
 
   const CardComponent = cardComponents[cardName!];
