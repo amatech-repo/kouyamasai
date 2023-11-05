@@ -31,6 +31,7 @@ const Home = () => {
     { path: 'Testukun', name: 'てつくん' },
     { path: 'Nanami', name: 'ななみ' },
     { path: 'Ken', name: 'けん' },
+    { path: 'Taniyan', name: 'たにやん' },
   ];
 
   return (
