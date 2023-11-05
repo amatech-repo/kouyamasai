@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Mei.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Ken.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Mei
+// 例 Ken
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const Mei = () => {
+const Ken = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,25 +30,25 @@ const Mei = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="めい"
-                label="２ねんせい"
+                name="けん"
+                label="1ねんせい"
                 mail=""
-                YoutubeLink="https://www.youtube.com/@precure"
+                YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="おもしろいほんがすきです。" />
+              <About aboutText="サッカーと野球が好きです" />
 
               {/* 入門編: あなたの趣味はなんですか？*/}
-              <Hobby hobbyText="ともだちとほんをかいています。" />
+              <Hobby hobbyText="ゲームが大好きです" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="かしゅになることです。" />
+              <Interest interestText="まだ決めていません" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink=""
-                githubLink=""
+                twitterLink="https://twitter.com/amatech1006"
+                githubLink="https://github.com/amatech-repo"
                 instagramLink=""
                 linkedinLink=""
               />
@@ -83,4 +83,4 @@ const Mei = () => {
   );
 };
 
-export default Mei;
+export default Ken;

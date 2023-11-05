@@ -4,15 +4,15 @@ import { Footer } from "./User/Footer";
 import { Interest } from "./User/Interest";
 import { About } from "./User/About";
 import { Info } from "./User/Info";
-import "./Ken.css";
-import { AmatechInfo } from "../../components/Amatech/AmatechInfo";
-import { Events } from "../../components/Amatech/Events";
+import "./Taniyan.css";
+import { AmatechInfo } from "../../../components/Amatech/AmatechInfo";
+import { Events } from "../../../components/Amatech/Events";
 import { Hobby } from "./User/Hobby";
 
 // ファイル名と合わせてください！※先頭は大文字で
-// 例 Ken
+// 例 Taniyan
 // この時、右クリックからファイル名の一括置換(全ての出現箇所を変更)を行うと楽です！
-const Ken = () => {
+const Taniyan = () => {
   const [isFlip, setIsFlip] = useState(false);
 
   const handleClick = () => {
@@ -30,26 +30,26 @@ const Ken = () => {
             <section className="main__section">
               {/* 入門編: 名前と学年を変更してみましょう！ */}
               <Info
-                name="けん"
-                label="1ねんせい"
+                name="TANIYAN"
+                label="理学部・2年"
                 mail=""
                 YoutubeLink="https://www.youtube.com/watch?v=gdZLi9oWNZg"
               />
               {/* 入門編: 自分自身ついての自己紹介文を書いてみましょう！ */}
-              <About aboutText="サッカーと野球が好きです" />
+              <About aboutText="数理科学科として日々数学に励んでいます…たぶん。" />
 
               {/* 入門編: あなたの趣味はなんですか？*/}
-              <Hobby hobbyText="ゲームが大好きです" />
+              <Hobby hobbyText="数学が趣味！特に長期休暇中は友人と自主ゼミを開いて勉強してます！" />
 
               {/* 入門編: あなたが今一番興味を持っていることを書いてみましょう！ */}
-              <Interest interestText="まだ決めていません" />
+              <Interest interestText="数学の分野で特に多様体というものに興味があります！" />
 
               {/* 入門編: 自己紹介用のリンクがあれば変更してみましょう！ */}
               {/* リンクがない方はURLを削除してください */}
               <Footer
-                twitterLink="https://twitter.com/amatech1006"
-                githubLink="https://github.com/amatech-repo"
-                instagramLink=""
+                twitterLink="https://twitter.com/TT72949291"
+                githubLink=""
+                instagramLink="https://instagram.com/tnymtig2"
                 linkedinLink=""
               />
             </section>
@@ -83,4 +83,4 @@ const Ken = () => {
   );
 };
 
-export default Ken;
+export default Taniyan;
