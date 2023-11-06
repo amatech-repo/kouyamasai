@@ -30,6 +30,7 @@ import Taniyan from "./ListCards/Day2/Taniyan/Taniyan";
 import Tish from "./ListCards/Day2/Tish/Tish";
 import Rina from "./ListCards/Rina/Rina";
 import Damoto from "./ListCards/Damoto/Damoto";
+import Kawa from "./ListCards/Kawa/Kawa";
 
 const CardDetail = () => {
   const { cardName } = useParams<{ cardName: string }>();
@@ -68,6 +69,7 @@ const CardDetail = () => {
     Tish: <Tish />,
     Rina: <Rina />,
     Damoto: <Damoto />,
+    Kawa: <Kawa />,
   };
 
   const CardComponent = cardComponents[cardName!];
