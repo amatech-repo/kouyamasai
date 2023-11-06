@@ -5,8 +5,17 @@
 
 - [スライドURL](https://www.canva.com/design/DAFyuEDf21A/9ItS-TxZ9OZN7QkdomaRxA/view?utm_content=DAFyuEDf21A&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-# ブランチ作成とディレクトリセットアップガイド
+# ブランチ作成とディレクトリセットアップガイド（手動）
 
+<img width="834" alt="スクリーンショット 2023-11-06 10 08 40" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/868ea13e-d015-47be-b8a6-74f3e26ebb94">
+<img width="736" alt="スクリーンショット 2023-11-06 10 08 50" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/5544c227-7029-4a0a-8d29-314f4ced59f4">
+<img width="680" alt="スクリーンショット 2023-11-06 10 09 07" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/2bece3db-48c2-4000-8a21-f612450aa698">
+<img width="716" alt="スクリーンショット 2023-11-06 10 09 29" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/b6a11884-a481-4f26-9cb7-ec43e3fc6ea1">
+<img width="805" alt="スクリーンショット 2023-11-06 10 09 22" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/271c972b-7260-4236-b15f-09efd545520b">
+<img width="790" alt="スクリーンショット 2023-11-06 10 08 59" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/6da7e21e-67af-4540-a69f-cd153ffd5511">
+<img width="728" alt="スクリーンショット 2023-11-06 10 09 15" src="https://github.com/amatech-repo/kouyamasai/assets/132275270/420379cb-205c-45ff-8c6a-39648616ec91">
+
+# ブランチ作成とディレクトリセットアップガイド（自動）
 このガイドでは、`./create_branch_and_setup_directory.sh` スクリプトを使用してプロジェクトに新しい機能や体験者をセットアップする方法を説明します。
 
 ## 前提条件
